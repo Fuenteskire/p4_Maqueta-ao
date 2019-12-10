@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Woodstock</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+        <style type="text/css">
+            :root{
+                --titular:2em;
+                --cos:1em;
+                --cfonts:pink;
+            }
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+            body{
+                font-size: 15px;
+            }
+            header{
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                display: flex;
+        }
+            section{
+                width: 50%;
+                height: 70vw;
+        }
+              section:first-child{
+                float: left;
+                background: red;
+        }
+            section:first-child img{
+                object-fit: cover;
+                height: 80%;
+                object-position: top center;
+            }
+            section:last-child{
+                background: red;
+                object-position: center center;
+        }
+            section:last-child img{
+                object-fit: cover;
+                height: 100%;
+                object-position: top center;
+            }
+            h1{
+                position: absolute;
+                top: 450px;
+                left: -100px;
+                right: 0px;
+                bottom: 0;
+                width: 50%;
+                height: 50%;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 3vw;
+                color: black;
+                font-family: 'Open Sans', sans-serif;
+            }
+            h2{
+                position: absolute;
+                top: 450px;
+                left: 825px;
+                right: 0;
+                bottom: 0;
+                width: 50%;
+                height: 50%;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 3vw;
+                color: white;
+                font-family: 'Open Sans', sans-serif;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            main {
+                width: 600px;
+                margin: auto;
+                font-family: 'Noto Serif', serif;
+            }
+            main>p{
+                padding: 4em 0;
+                line-height: 1.4em;                
+                color: purple;
+                column-count: 2;
+                column-gap: 30px;
+                column-rule: 1px solid purple;
+                text-align: justify;
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+            }
+            article{
+                padding: 0 4em;
+                color: gray;
+            }
+            article p{
+                margin:0 0 1.2em 0; 
+                text-align: justify;
+                hyphens: auto;
+            }
+            article p:first-child:first-letter{ 
+                color: purple;
+                font-size: 10em;
+                float: left;
+                line-height: 6rem;
+                padding-right: 1rem;
+                padding-left: 0.5rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            .cercle{
+                background: pink;
+                border-radius: 50%;
+                shape-outside: circle(50%) border-box;
+                float: left;
+                max-width: 18em;
+                margin-left: -4em;
+                shape-margin: 0.4em;
+                margin-right: 5em;
+            }
+            .cercle img{
+                mix-blend-mode: hard-light;
+                border-radius: 50%;
+                shape-outside: circle(50%);
+            }
+            .hexagon{
+                background: pink;
+                float: right;
+                max-width: 20em;
+                margin-right: -6em;
+                shape-margin: 1em;
+                margin-left: 1em;
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)border-box;
+            }
+            .hexagon img{
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            }
+            @media(max-width:600px);
+            body{
+                font-size:14px;
+            }
+    </style>
+    </head>
+    <body>
+        <header>
+            <section>
+            <img src="img/cartell1.jpg" alt="">
+            <h1>Woodstock<br>divendres 15</h1>
+            </section>
+            <section>
+            <img src="img/cartell2.jpg" alt="">
+            <h2>Woodstock<br>disabte 16</h2>
+            </section>
+        </header>
+        <main>
+            <p>Woodstock és un festival que se llevó a cabo
+            en los años 1969, la época hippie y de la psicodelia en contra
+            de la guerra del Vietnam. Acudieron 450.000 personas
+            aproximadamente, ha sido un festival que llegó a marcar la
+            historia. Este año 2019 se cumplen 50 años de festival y se
+            va a intentar conseguir hacer un festival para recordar como
+            el de aquellos tiempos.</p>
+            <article>
+            <p>En agosto de 1969, la Feria de Música y Arte de Woodstock tuvo lugar en una granja lechera en Bethel, Nueva York. Más de medio millón de personas llegaron a una granja de 600 acres para escuchar 32 actos (artistas principales y emergentes de la época) en el transcurso de cuatro días (15-18 de agosto). Jefferson Airplane, Jimi Hendrix, The Grateful Dead, The Who, Janis Joplin y Crosby, Stills, Nash & Young estaban entre la alineación . Woodstock es conocido como uno de los mejores acontecimientos de todos los tiempos y, tal vez, el momento más crucial en la historia de la música.
+            </p>
+                <div class="cercle">
+            <img src="img/cartell3.jpg">
+                </div>
+            <p>Joni Mitchell dijo: "Woodstock fue una chispa de belleza", donde medio millón de niños "vieron que eran parte de un organismo mayor". Según Michael Lang, uno de los cuatro jóvenes que formaron Woodstock Ventures para producir el festival, "Eso es lo que más significa para mí: la conexión mutua que sentimos todos los que trabajamos en el festival, todos los que vinieron al mismo y los millones que no pudieron estar allí, pero fueron tocados por él".</p>
+                <div class="hexagon">
+            <img src="img/cartell4.jpg" alt="">
+                    </div>
+            <p>Para el miércoles 13 de agosto, unas 60,000 personas ya habían llegado al festival y acamparon. El viernes, las carreteras estaban tan obstruidas con automóviles que los artistas tuvieron que llegar en helicóptero. Aunque se vendieron más de 100,000 entradas antes del fin de semana del festival, se volvieron innecesarias ya que enjambres de personas descendieron a los terrenos del concierto para participar en este acontecimiento histórico y pacífico. Cuatro días de música ... medio millón de personas ... llueve, y el resto es historia. Woodstock 1969/2019</p>
+            <p>Los productores:
+                Artie Kornfeld,
+                Michael Lang,
+                John Roberts,
+                Joel Rosenman.</p>
+            </article>    
+        </main>
+    </body>
+</html>
